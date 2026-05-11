@@ -1,88 +1,23 @@
-# Brazil AI Use Heatmap Lab
+# Mapa De Calor Do Uso De IA No Brasil
 
-Regional digital adoption analysis lab with synthetic CETIC-style indicators and heatmap visualization.
+Analise regional sintetica de acesso digital e uso de IA com heatmap.
 
-> Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.
+> Projeto educacional inspirado na EETEPA Vilhena Alves. Não é sistema oficial institucional e não usa dados reais de estudantes.
 
-## Overview
+## Visão Geral
 
-**Curricular code:** I-10  
-**Course:** Technical Computing  
-**Discipline:** Emerging Technologies  
-**Difficulty:** Intermediate
-
-This repository is a runnable Python MVP for portfolio and classroom practice. The default command uses only safe sample data committed to `data/sample/`.
-
-## Concepts Practiced
-
-- CSV reading
-- pivot tables
-- heatmaps
-- regional comparison
-- digital inequality
-
-## Repository Structure
-
-```text
-data/
-  sample/       # safe synthetic samples
-  raw/          # optional external files, ignored except .gitkeep
-  processed/    # generated outputs, ignored except .gitkeep
-notebooks/
-  01_exploracao.ipynb
-scripts/
-  download_data.py
-src/
-  main.py
-charts/
-reports/
-```
-
-## Quick Start
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python -m src.main --sample
-```
-
-Linux/macOS activation:
-
-```bash
-source .venv/bin/activate
-```
-
-## Safe Operations
-
-- The CI workflow never scans live networks, scrapes sites, runs speed tests, sends packets, or calls external APIs.
-- Real-world data collection, when applicable, must be performed only in authorized lab environments.
-- Generated outputs are written to `data/processed/`, `charts/`, or `reports/`.
-
----
-
-# Brazil AI Use Heatmap Lab
-
-Regional digital adoption analysis lab with synthetic CETIC-style indicators and heatmap visualization.
-
-> Projeto educacional inspirado na EETEPA Vilhena Alves. Nao e sistema oficial institucional e nao usa dados reais de estudantes.
-
-## Visao Geral
-
-**Codigo curricular:** I-10  
-**Curso:** Tecnico em Informatica  
+**Código curricular:** I-10  
+**Curso/área:** Tecnico Em Informatica  
 **Disciplina:** Tecnologias Emergentes  
-**Dificuldade:** Intermediario
+**Dificuldade:** Intermediate
 
-Este repositorio e um MVP Python executavel para portfolio e pratica em sala. O comando padrao usa apenas dados de amostra seguros em `data/sample/`.
+Este repositório é um MVP executável para portfólio e prática em sala. O comando padrão usa somente amostras seguras em `data/sample/` e gera saídas locais em `data/processed/`, `charts/` ou `reports/`.
 
-## Conceitos Praticados
+## Competências Praticadas
 
-- CSV reading
-- pivot tables
-- heatmaps
-- regional comparison
-- digital inequality
+- leitura de dados
+- processamento local
+- relatório reprodutível
 
 ## Como Rodar
 
@@ -93,12 +28,18 @@ pip install -r requirements.txt
 python -m src.main --sample
 ```
 
-## Operacao Segura
+No Linux/macOS:
 
-- O CI nunca varre redes reais, faz scraping, executa speed tests, envia pacotes ou chama APIs externas.
-- Coleta real de dados, quando aplicavel, deve ocorrer apenas em ambientes de laboratorio autorizados.
-- Saidas geradas ficam em `data/processed/`, `charts/` ou `reports/`.
+```bash
+source .venv/bin/activate
+```
 
-## License
+## Operação Segura
 
-MIT. See [LICENSE](LICENSE).
+- O CI usa apenas dados sintéticos e não depende de APIs externas.
+- Coletas reais, quando existirem, devem ocorrer apenas em ambiente autorizado.
+- Nenhum dataset grande, documento interno escolar, telefone, e-mail pessoal ou dado real de estudante é versionado.
+
+## Licença
+
+MIT. Consulte [LICENSE](LICENSE).
